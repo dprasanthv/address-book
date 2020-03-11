@@ -1,0 +1,45 @@
+<html>
+<head></head>
+<body>
+	<wicket:panel>
+		<div id="main-panel" wicket:id="myContainer">
+			<div id="input">
+				<form wicket:id="form">
+					<div class="col-xs-6">
+						<input type="text" wicket:id="searchText"
+							class="form-control search-box"
+							placeholder="Search and Filter Data">
+					</div>
+					<div class="col-xs-6">
+						<button class="btn btn-default" wicket:id="search" type="submit">
+							Search <i class="fa fa-search" aria-hidden="true"></i>
+						</button>
+						<button class="btn btn-default" wicket:id="reset" type="reset">
+							Reset <i class="fa fa-undo" aria-hidden="true"></i>
+						</button>
+					</div>
+				</form>
+
+			</div>
+			<table>
+				<thead>
+					<tr>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Date of Birth (MM.DD.YYYY)</th>
+						<th>Email</th>
+						<th>Phone</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr wicket:id="rows">
+						<td wicket:id="dataRow"></td>
+					</tr>
+				</tbody>
+			</table>
+			<div wicket:id="noData" class="noData"></div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

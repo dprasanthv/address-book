@@ -1,0 +1,20 @@
+version: "2"
+services:
+ redis:
+    build:
+      context: redis
+    ports:
+      - "7000:6379"
+    image: redis-db
+    container_name: redis-db
+ spring-apache:
+    build: 
+      context: spring-apache
+    ports:
+      - "8080:8080"
+    environment:
+      - "SPRING_PROFILES_ACTIVE=dev"
+    image: spring-apache
+    container_name: spring-apache
+    extra_hosts:
+        - dockerhost:172.17.0.1

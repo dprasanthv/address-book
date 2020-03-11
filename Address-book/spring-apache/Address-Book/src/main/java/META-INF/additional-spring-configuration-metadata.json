@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "redis.hostname",
+    "type": "java.lang.String",
+    "description": "Hostname of redis database"
+  },
+  {
+    "name": "redis.port",
+    "type": "java.lang.String",
+    "description": "port number of redis database host"
+  }
+]}

@@ -1,0 +1,25 @@
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+  <title>Address Book</title>
+   <meta http-equiv="cache-control" content="no-cache"/>
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta http-equiv="expires" content="-1" />
+</head>
+<body class="default-body">
+<nav class="navbar navbar-default" >
+  <div class="container-fluid">
+    <div class="heading-adjust navbar-header">
+		<i class="fa fa-address-book"></i>
+		<span wicket:id="title"></span>
+    </div>
+  </div>
+</nav>
+	<div class="row">
+	<div class ="col-xs-2" wicket:id="sideNavPanel">
+	</div>
+	<div class="col-xs-10" wicket:id="mainPanel">
+	</div>
+	</div>
+	<wicket:child />
+</body>
+</html>
